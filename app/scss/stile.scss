@@ -3,6 +3,9 @@
 @import 'fonts';
 
 
+// header
+
+
 .header__top-inner {
 	display: flex;
 	justify-content: space-between;
@@ -60,6 +63,69 @@
 	}
 	a {
 		color: #fff;
+	}
+}
+
+
+// search
+
+
+.search {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	min-height: 532px;
+}
+
+.search__inner {
+	text-align: center;
+	color: #fff;
+	font-family: 'Roboto', sans-serif;
+	padding: 155px 0 100px;
+}
+
+.search__title {
+	font-weight: 700;
+	font-size: 48px;
+}
+
+.search__text {
+	font-weight: 500;
+	font-size: 20px;
+	margin-top: 30px;
+}
+
+.search__form {
+	max-width: 670px;
+	margin: 0 auto;
+	margin-top: 52px;
+	position: relative;
+
+	input {
+		display: block;
+		width: 100%;
+		border-radius: 4px;
+		box-shadow: 0px 1px 10px 0 rgba(124, 178, 64, 0.75);
+		background-color: #fff;
+		height: 56px;
+		border: none;
+		font-size: 18px;
+		font-weight: 500;
+		padding: 0 60px 0 25px;
+		color: $color-text;
+
+		&::placeholder {
+			color: #90a4ae;
+			font-size: 14px;
+		}
+	}
+
+	button {
+		position: absolute;
+		border: none;
+		top: 17px;
+		right: 20px;
+		background-color: transparent;
 	}
 }
 
