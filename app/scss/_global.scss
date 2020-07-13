@@ -9,7 +9,7 @@ html {
 a {
 	display: inline-block;
 	text-decoration: none;
-	color: $color-text;
+	color: $slate;
 }
 
 ul, li {
@@ -22,7 +22,7 @@ body {
 	font-family: 'roboto-regular', sans-serif;
 	font-weight: 400;
 	font-size: 15px;
-	color: $color-text;
+	color: $slate;
 }
 
 .container {
@@ -30,3 +30,32 @@ body {
 	margin: 0 auto;
 	padding: 0 15px;
 }
+
+.container-fluid {
+	max-width: 100%;
+	margin: 0 auto;
+	padding: 0 30px;
+}
+
+@media (max-width: 720px) {
+	.container-fluid {
+		padding: 0 15px;
+	}
+}
+
+.title {
+	font-family: Roboto;
+	font-size: 36px;
+	color: $dark;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
+	text-align: center;
+	margin-bottom: 55px;
+}
+
+.products-item__rateyo {
+	display: inline-block;
+	margin-right: 12px;
+}
+
+
