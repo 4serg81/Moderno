@@ -379,7 +379,45 @@
 		margin-bottom: 24px;
 		transition: all .3s;
 	}
+}
 
+
+// autors
+
+
+.autors {
+	background: url(/images/autors-bg.jpg) center no-repeat;
+	background-size: cover;
+	min-height: 750px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	&__box {
+		max-width: 650px;
+		width: 100%;
+		min-height: 215px;
+		background-color: $booger;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&__title {
+		font-size: 30px;
+		color: #fff;
+		margin-right: 50px;
+		span {
+			font-family: 'Roboto', sans-serif;
+			font-weight: 700;
+		}
+	}
+
+	&__link {
+		font-size: 18px;
+		background-color: #fff;
+		padding: 20px 40px;
+	}
 }
 
 
