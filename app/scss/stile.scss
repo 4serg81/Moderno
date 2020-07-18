@@ -136,7 +136,7 @@
 
 
 .products {
-	padding: 100px 0;
+	padding: 120px 0;
 	background-color: $grey;
 }
 
@@ -256,7 +256,7 @@
 }
 
 .products__btns-bottom {
-	margin: 63px 0 112px;
+	margin-top: 46px;
 	text-align: center;
 }
 
@@ -419,6 +419,222 @@
 		padding: 20px 40px;
 	}
 }
+
+
+// tutorials
+
+
+.tutorials {
+	padding: 60px 0px 120px;
+
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+	}
+}
+
+.tutorials-item {
+	max-width: 370px;
+	width: 100%;
+
+	&__img {
+		min-height: 270px;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	&__title {
+		font-family: 'Roboto', sans-serif;
+		font-weight: 700;
+		font-size: 24px;
+		color: $dark;
+		background-color: #f8f8f8;
+		padding: 35px 15px;
+		text-align: center;
+	}
+}
+
+
+// footer
+
+
+.footer {
+	background-color: $dark;
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+		padding: 110px 0px 100px;
+	}
+}
+
+.footer-col {
+	max-width: 270px;
+	width: 100%;
+	padding: 0px 15px;
+
+	&-menu {
+		max-width: 220px;
+	}
+
+	&__title {
+		font-family: 'Raleway', sans-serif;
+		font-weight: 700;
+		font-size: 22px;
+		color: #fff;
+		padding-bottom: 23px;
+		margin-bottom: 32px;
+		position: relative;
+		&::after {
+			content: "";
+			position: absolute;
+			left: 2px;
+			bottom: 0;
+			width: 51px;
+			height: 3px;
+			background-color: $booger;
+		}
+	}
+
+	&__text {
+		color: $silver;
+		margin-bottom: 32px;
+	}
+
+	&__info {
+		margin-top: 25px;
+		font-family: 'Roboto', sans-serif;
+		font-weight: 500;
+		font-size: 14px;
+		color: #fff;
+		padding-left: 30px;
+		position: relative;
+		&::after {
+			content: '';
+			position: absolute;
+			left: 0;
+			top: 0;
+			font-size: 18px;
+			color: $booger;
+			font-family: 'icomoon';
+		}
+	}
+
+	&__address {
+		&::after {
+			content: '\f041';
+		}
+	}
+
+	&__tel {
+		&::after {
+			content: '\f095';
+		}
+	}
+
+	&__list {
+		a {
+			margin-bottom: 15px;
+			color: $silver;
+			padding-left: 21px;
+			position: relative;
+			&::before {
+				content: '\f105';
+				position: absolute;
+				font-size: 18px;
+				color: $booger;
+				left: 0;
+				top: 50%;
+				transform: translateY(-50%);
+				font-family: 'icomoon';
+			}
+		}
+	}
+}
+
+.socials {
+margin-bottom: 35px;
+
+	li {
+		display: inline-block;
+		& + li {
+			margin-left: 7px;
+		}
+	}
+	a {
+		width: 28px;
+		height: 28px;
+		background-image: url(/images/css_sprites.png);
+	}
+	&__facebook {
+		background-position: -28px 0;
+	}
+	&__pinterest {
+		background-position: -56px 0;
+	}
+	&__twitter {
+		background-position: 0 -28px;
+	}
+	&__youtube {
+		background-position: -28px -28px;
+	}
+}
+
+.footer-form {
+	position: relative;
+
+	input {
+		border: none;
+		background-color: #2f3c43;
+		display: block;
+		width: 100%;
+		height: 40px;
+		color: #fff;
+		padding: 0 55px 0 13px;
+		outline: none;
+		font-size: 18px;
+		&::placeholder {
+			font-size: 16px;
+		}
+	}
+
+	button {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		background-color: $booger;
+		border: none;
+		width: 43px;
+		height: 40px;
+		cursor: pointer;
+		&::before {
+			content: '\f124';
+			font-family: 'icomoon';
+			color: #fff;
+			font-size: 20px;
+			position: absolute;
+			top: 8px;
+			left: 14px;
+		}
+	}
+}
+
+.footer-form__title {
+	margin-bottom: 15px;
+	color: #fff;
+	font-size: 20px;
+}
+
+.footer__copy {
+	border-top: 1px solid #424d53;
+}
+
+.footer__copy-text {
+	color: #919699;
+	padding: 25px 0px 30px;
+	text-align: center;
+}
+
 
 
 
