@@ -1,0 +1,405 @@
+// search
+
+
+.search {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	min-height: 532px;
+}
+
+.page-search {
+	min-height: 230px;
+
+	.search__inner {
+		padding: 60px 0px 70px;
+	}
+
+	.search__text {
+		margin-bottom: 20px;
+	}
+
+}
+
+.search__inner {
+	text-align: center;
+	color: #fff;
+	font-family: 'Roboto', sans-serif;
+	padding: 155px 0 100px;
+}
+
+.search__title {
+	font-weight: 700;
+	font-size: 48px;
+	margin-bottom: 30px;
+}
+
+.search__text {
+	font-weight: 500;
+	font-size: 20px;
+	margin-bottom: 52px;
+}
+
+.search__form {
+	max-width: 670px;
+	margin: 0 auto;
+	position: relative;
+
+	input {
+		display: block;
+		width: 100%;
+		border-radius: 4px;
+		box-shadow: 0px 1px 10px 0 rgba(124, 178, 64, 0.75);
+		background-color: #fff;
+		height: 56px;
+		border: none;
+		font-size: 18px;
+		font-weight: 500;
+		padding: 0 60px 0 25px;
+		color: $slate;
+
+		&::placeholder {
+			color: #90a4ae;
+			font-size: 14px;
+		}
+	}
+
+	button {
+		position: absolute;
+		border: none;
+		top: 17px;
+		right: 20px;
+		background-color: transparent;
+		cursor: pointer;
+		outline: none;
+	}
+}
+
+
+// products
+
+
+.products {
+	padding: 120px 0;
+	background-color: $grey;
+}
+
+.products__btns {
+	text-align: center;
+	margin-bottom: 60px;
+}
+
+.products__button {
+	padding: 13px 21px;
+	border: none;
+	color: $dark;
+	background-color: #fff;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 500;
+	font-size: 14px;
+	cursor: pointer;
+	& + .products__button {
+		margin-left: 5px;
+	}
+	&.mixitup-control-active {
+		background-color: $tomato;
+		color: #fff;
+	}
+}
+
+
+.products__box {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.products-item {
+	max-width: 442px;
+	width: 100%;
+	box-shadow: 0px 1px 2px 0 rgba(205, 214, 222, 0.75);
+	margin-bottom: 32px;
+	background-color: #fff;
+
+	&__img {
+		min-height: 250px;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		display: block;
+	}
+	
+	&__content {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 10px 30px;
+		min-height: 90px;
+		font-family: 'Roboto', sans-serif;
+		font-weight: 500;
+		color: $dark;
+		border-bottom: 1px solid #e7ecf2;
+	}
+
+	&__name {
+		max-width: 300px;
+	}
+
+	&__title {
+		font-size: 18px;
+		display: block;
+		margin-bottom: 10px;
+	}
+
+	&__category {
+		color: $booger;
+		font-size: 14px;
+		display: block;
+	}
+
+	&__price {
+		font-weight: 700;
+		font-size: 20px;
+	}
+
+	&__info {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		min-height: 70px;
+		padding: 10px 30px;
+	}
+
+	&__autor {
+		display: flex;
+		align-items: center;
+		max-width: 240px;
+		span {
+			font-family: 'Roboto', sans-serif;
+			font-weight: 500;
+			font-size: 14px;
+		}
+	}
+
+	&__avatar {
+		width: 30px;
+		height: 30px;
+		border-radius: 50%;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		display: inline-block;
+		margin-right: 14px;
+	}
+
+	&__rateyo {
+		font-size: 12px;
+		span {
+			color: $dark;
+		}
+	}
+
+	.jq-ry-container {
+		padding: 0;
+	}
+}
+
+.products__btns-bottom {
+	margin-top: 46px;
+	text-align: center;
+}
+
+.products__button-bottom {
+	padding: 20px 32px;
+	font-family: 'roboto-regular', sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	box-shadow: 0px 1px 3px 0 rgba(204, 216, 228, 0.75);
+	& + .products__button-bottom {
+		margin-left: 12px;
+	}
+	&.mixitup-control-active {
+		background-color: $tomato;
+		color: #fff;
+	}
+}
+
+
+// slider
+
+
+.slider {
+	padding: 120px 0 120px;
+	.slick-dots {
+		text-align: center;
+		margin-top: 50px;
+		li {
+			display: inline-block;
+			margin: 0 3px 0 3px;
+			&.slick-active {
+				button {
+					background-color: $booger;
+				}
+			}
+			button {
+				border-radius: 50%;
+				background-color: rgb(232,232,232);
+				border: none;
+				font-size: 0;
+				width: 16px;
+				height: 16px;
+				outline: none;
+				cursor: pointer;
+			}
+		}
+	}
+}
+
+
+// advantages
+
+
+.advantages {
+	background-color: $dark;
+	padding: 115px 0;
+}
+
+.advantages__title {
+	color: #fff;
+	margin-bottom: 80px;
+}
+
+.advantages__inner {
+	display: flex;
+	justify-content: space-between;
+}
+
+.advantages__item {
+	max-width: 320px;
+	text-align: center;
+	padding: 0 15px;
+
+	&:hover {
+		.advantages__item-img {
+			background-color: $booger;
+			fill: #fff;
+		}
+
+		.advantages__item-title {
+			color: $booger;
+		}
+	}
+
+	&-img {
+		width: 113px;
+		height: 113px;
+		border-radius: 50%;
+		background-color: #fff;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 0 auto 30px;
+		transition: all .3s;
+	}
+
+	&-svg1 {
+		svg {
+			width: 65px;
+		}
+	}
+
+	&-svg2 {
+		svg {
+			width: 85px;
+		}
+	}
+
+	&-svg3 {
+		svg {
+			width: 70px;
+		}
+	}
+
+	&-title {
+		font-family: 'Roboto', sans-serif;
+		font-weight: 500;
+		font-size: 24px;
+		color: #fff;
+		margin-bottom: 24px;
+		transition: all .3s;
+	}
+}
+
+
+// autors
+
+
+.autors {
+	background: url(/images/autors-bg.jpg) center no-repeat;
+	background-size: cover;
+	min-height: 750px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	&__box {
+		max-width: 650px;
+		width: 100%;
+		min-height: 215px;
+		background-color: $booger;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&__title {
+		font-size: 30px;
+		color: #fff;
+		margin-right: 50px;
+		span {
+			font-family: 'Roboto', sans-serif;
+			font-weight: 700;
+		}
+	}
+
+	&__link {
+		font-size: 18px;
+		background-color: #fff;
+		padding: 20px 40px;
+	}
+}
+
+
+// tutorials
+
+
+.tutorials {
+	padding: 60px 0px 120px;
+
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+	}
+}
+
+.tutorials-item {
+	max-width: 370px;
+	width: 100%;
+
+	&__img {
+		min-height: 270px;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	&__title {
+		font-family: 'Roboto', sans-serif;
+		font-weight: 700;
+		font-size: 24px;
+		color: $dark;
+		background-color: #f8f8f8;
+		padding: 35px 15px;
+		text-align: center;
+	}
+}
