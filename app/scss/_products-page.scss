@@ -1,3 +1,7 @@
+.products-page {
+	background-color: $grey;
+}
+
 // aside
 
 .products-page__inner {
@@ -20,10 +24,9 @@
 .aside__title {
 	border-bottom: 1px solid #dde3e8;
 	font-size: 20px;
-	padding: 20px 15px;
+	padding: 20px 0px;
 	color: $dark;
-	font-family: 'Roboto', sans-serif;
-	font-weight: 700;
+	@include bold;
 	margin-bottom: 30px;
 }
 
@@ -61,8 +64,7 @@
 		background-color: $booger;
 		text-align: center;
 		color: #fff;
-		font-family: 'Roboto', sans-serif;
-		font-weight: 500;
+		@include medium;
 		width: 100%;
 		display: block;
 		border: none;
@@ -144,8 +146,7 @@
 		justify-content: space-between;
 		align-items: center;
 		padding: 10px 0;
-		font-family: 'Roboto', sans-serif;
-		font-weight: 500;
+		@include medium;
 		color: $dark;
 	}
 
@@ -186,8 +187,7 @@
 		max-width: 130px;
 		padding-right: 10px;
 		span {
-			font-family: 'Roboto', sans-serif;
-			font-weight: 500;
+			@include medium;
 			font-size: 14px;
 
 		}
@@ -223,8 +223,7 @@
 
 .top-sellers__link {
 	padding: 18px 10px;
-	font-family: 'Roboto', sans-serif;
-	font-weight: 500;
+	@include medium;
 	background-color: $booger;
 	color: #fff;
 	text-align: center;
@@ -327,8 +326,7 @@ button.icon-unsorted {
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		font-family: 'Roboto', sans-serif;
-		font-weight: 500;
+		@include medium;
 		font-size: 16px;
 		color: $dark;
 		&.active {

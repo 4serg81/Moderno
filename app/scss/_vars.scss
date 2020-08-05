@@ -5,3 +5,14 @@ $grey: #f4f6f5;
 $slate: #546e7a;
 $silver: #b7c3c8;
 $orangey-yellow: #fcb322;
+$warm-grey: #707070;
+
+@mixin medium {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 500;
+}
+
+@mixin bold {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
+}

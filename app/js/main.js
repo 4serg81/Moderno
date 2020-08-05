@@ -1,11 +1,11 @@
 $(function(){
 
 
-	$(".products-item__rateyo").rateYo({
-		rating: 5,
-		starWidth: "12px",
-		readOnly: true
-	});
+	// $(".products-item__rateyo").rateYo({
+	// 	rating: 5,
+	// 	starWidth: "12px",
+	// 	readOnly: true
+	// });
 
 	$('.slider__inner').slick({
 		dots: true,
@@ -40,6 +40,15 @@ $(function(){
 
 	$('.header__btn-menu').on('click', function(){
 		$('.header__buttons').toggleClass('active');
+	});
+
+	$('.product-details__tabs .tab').on('click', function(event){
+		var id = $(this).attr('data-id');
+		$('.product-details__tabs').find('.tab-item').removeClass('active-tab').hide();
+		$('.product-details__tabs .tabs').find('.tab').removeClass('active').hide();
+		$(this).addClass('active');
+		$('#' + id).addClass('active-tab').fadeIn();
+		return false;
 	});
 
 

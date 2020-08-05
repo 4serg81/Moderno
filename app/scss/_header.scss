@@ -84,8 +84,7 @@
 		display: flex;
 		justify-content: space-between;
 		span {
-			font-family: 'Roboto', sans-serif;
-			font-weight: 700;
+			@include bold;
 			font-size: 16px;
 			padding: 17px 10px 17px 30px;
 		}
@@ -104,8 +103,7 @@
 		padding: 13px 5px;
 		background-color: $booger;
 		display: inline-block;
-		font-family: 'Roboto', sans-serif;
-		font-weight: 700;
+		@include bold;
 		font-size: 14px;
 		color: $grey;
 		width: 105px;
@@ -174,15 +172,13 @@
 }
 
 .general__text1 {
-	font-family: 'Roboto', sans-serif;
-	font-weight: 500;
+	@include medium;
 	margin-bottom: 10px;
 }
 
 .message__menu {
 	.general__text1 {
-		font-family: 'Roboto', sans-serif;
-		font-weight: 700;
+		@include bold;
 		margin-bottom: 8px;
 		font-size: 12px;
 	}
@@ -207,8 +203,7 @@
 }
 
 .general__text3 {
-	font-family: 'Roboto', sans-serif;
-	font-weight: 500;
+	@include medium;
 	font-size: 16px;
 	color: #000;
 	margin-bottom: 10px;
@@ -242,7 +237,7 @@
 		font-size: 16px;
 		top: 3px;
 		right: 0;
-		color: #707070;
+		color: $warm-grey;
 	}
 	&__inner {
 		display: flex;
@@ -258,14 +253,13 @@
 	&__info {
 		font-size: 14px;
 		line-height: 24px;
-		font-family: 'Roboto', sans-serif;
 	}
 	&__name {
-		font-weight: 500;
+		@include medium;
 		color: #222;
 	}
 	&__account {
-		font-weight: 700;
+		@include bold;
 		color: $booger;
 	}
 }
