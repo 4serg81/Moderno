@@ -1,0 +1,33 @@
+.content {
+	background-color: $grey;
+}
+
+.about__wrapper {
+	border: 1px solid #d7d7d7;
+	background-color: #fff;
+	margin-bottom: 150px;
+}
+
+.about__head {
+	@include medium;
+	font-size: 24px;
+	color: $dark;
+	padding: 25px 30px;
+	border-bottom: 1px solid #d7d7d7;
+}
+
+.about__inner {
+	padding: 0px 50px 40px;
+}
+
+.about__box {
+	h3 {
+		@include bold;
+		font-size: 20px;
+		color: #444;
+		margin: 40px 0px 20px;
+	}
+	p {
+		color: $warm-grey;
+	}
+}
