@@ -150,7 +150,7 @@
 										</ul>
 									</div>
 								</div>
-								<a class="header__btn header__btn_login" href="#">Login</a>
+								<a class="header__btn header__btn_login" <a data-fancybox data-src="#modal" href="javascript:;">Login</a>
 								<a class="header__btn header__btn_logout header__btn_off" href="#">Logout</a>
 								<a class="header__btn header__btn_register" href="#">Register</a>
 							</div>
@@ -796,6 +796,25 @@
 					respective owners.</div>
 			</div>
 		</section>
+	</div>
+
+	<!-- login-popup -->
+
+	<div id="modal">
+		<div class="login-popup__inner">
+			<div class="login-title">Login</div>
+			<form>
+				<label class="icon-user">
+					<input type="text" placeholder="Name" required>
+				</label>
+				<label class="icon-lock">
+					<input type="text" placeholder="Password" required>
+				</label>
+				<button type="submit">Submit</button>
+				<a class="creat-acc icon-edit" href="#">Creat An Account?</a>
+				<a class="lost-pass" href="#">Lost Password?</a>
+			</form>
+		</div>
 	</div>
 
 
