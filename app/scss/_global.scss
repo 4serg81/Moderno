@@ -45,6 +45,13 @@ body {
 	overflow-x: hidden;
 }
 
+h1, h2, h3 {
+	margin: 0;
+	font-size: 24px;
+	@include medium;
+	color: $dark;
+}
+
 .container {
 	max-width: 1200px;
 	margin: 0 auto;

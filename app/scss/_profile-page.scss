@@ -1,0 +1,230 @@
+.profile__inner {
+	display: flex;
+}
+
+.profile__aside {
+	max-width: 270px;
+	width: 100%;
+	margin-right: 30px;
+}
+
+.profile__content {
+	width: 100%;
+}
+
+// aside
+
+.profile__status {
+	color: #707070;
+	font-size: 13px;
+	border: 1px solid #d7d7d7;
+	padding: 10px 10px 10px 30px;
+	position: relative;
+	&::before {
+		position: absolute;
+		content: '';
+		width: 9px;
+		height: 9px;
+		top: 13px;
+		left: 12px;
+		border-radius: 50%;
+	}
+}
+
+.profile-on {
+	&::before {
+		background-color: $booger;
+	}
+}
+
+.profile-off {
+	&::before {
+		background-color: $tomato;
+	}
+}
+
+.profile__aside-btns {
+	margin-bottom: 30px;
+	a {
+		margin-bottom: 15px;
+		display: block;
+		width: 100%;
+		font-size: 16px;
+		@include medium;
+		color: #fff;
+		padding: 20px 15px;
+		text-align: center;
+		box-shadow: 0px 1px 2px 0 rgba(69, 90, 100, 0.75);
+	}
+}
+
+.profile__btn-message {
+	position: relative;
+	background-color: $slate;
+	&::before {
+		content: '\f003';
+		font-family: 'icomoon';
+		position: absolute;
+		top: 19px;
+		left: 50px;
+	}
+}
+
+.profile__btn-following {
+	background-color: $booger;
+}
+
+// profile content
+
+.profile__banner {
+	border: solid 1px #d7d7d7;
+	background-color: #fff;
+	padding: 20px;
+	margin-bottom: 30px;
+}
+
+.profile__banner-img {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	min-height: 332px;
+}
+
+.profile__items{
+	display: flex;
+	border: solid 1px #d7d7d7;
+	margin-bottom: 30px;
+}
+
+.profile__item {
+	width: 25%;
+	background-color: #fff;
+	padding: 20px 15px;
+	text-align: center;
+	& + .profile__item {
+		border-left: 1px solid #d7d7d7;
+	}
+}
+
+.profile__title {
+	@include medium;
+	font-size: 14px;
+	color: $dark;
+	margin-bottom: 8px;
+}
+
+.profile__content {
+	font-size: 14px;
+	color: $warm-grey;
+}
+
+.profile__content_black {
+	color: #000;
+}
+
+// profile-tabs
+
+.profile-tabs {
+	margin-bottom: 115px;
+}
+
+.profile__tabs {
+	display: flex;
+	.tabs {
+		max-width: 270px;
+		width: 100%;
+		margin-right: 30px;
+		border: 1px solid #d7d7d7;
+		border-bottom: none;
+		background-color: #fff;
+		display: block;
+		height: 100%;
+		span {
+			border-bottom: 1px solid #d7d7d7;
+			padding: 20px 20px 20px 50px;
+			display: block;
+			@include medium;
+			font-size: 14px;
+			color: $warm-grey;
+			position: relative;
+			&::before {
+				position: absolute;
+				left: 23px;
+				top: 50%;
+				transform: translateY(-50%);
+				color: #d0d0d0;
+			}
+			&.active {
+				border-bottom: 1px solid $booger;
+				color: $dark;
+				&::before {
+					color: $booger;
+				}
+			}
+		}
+	}
+	.tab_content {
+		background-color: transparent;
+		width: 100%;
+		.tab-item {
+			display: none;
+			&:first-child {
+				display: block;
+			}
+		}
+	}
+}
+
+.personal-box {
+	border: 1px solid #d7d7d7;
+	background-color: #fff;
+	padding: 35px 45px 50px;
+}
+
+.personal-box__title {
+	@include bold;
+	font-size: 20px;
+	color: $dark;
+	margin-bottom: 25px;
+}
+
+.personal-box__text {
+	margin-bottom: 40px;
+	p {
+		margin-top: 0;
+		color: $warm-grey;
+	}
+}
+
+.personal-box__head {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 14px;
+}
+
+.personal-box__item-title {
+	@include medium;
+	font-size: 16px;
+	color: $dark;
+	font-style: italic;
+}
+
+.personal-box__proc {
+	@include bold;
+	font-size: 16px;
+	color: $dark;
+}
+
+.personal-box__line {
+	height: 15px;
+	background-color: #f4f4f4;
+	border-radius: 4px;
+	margin-bottom: 25px;
+	div {
+		height: 15px;
+		border-radius: 4px;
+		background-image: url(/images/progressive-bar.jpg);
+		background-repeat: repeat;
+	}
+}
+

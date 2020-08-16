@@ -2,13 +2,13 @@
 	background-color: $grey;
 }
 
-.about__wrapper {
+.about__wrapper, .contacts__wrapper {
 	border: 1px solid #d7d7d7;
 	background-color: #fff;
 	margin-bottom: 150px;
 }
 
-.about__head {
+.about__head, .contacts__head {
 	@include medium;
 	font-size: 24px;
 	color: $dark;
