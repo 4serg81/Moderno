@@ -9,6 +9,8 @@ html {
 html,
 body {
 	height: 100%;
+	position: relative;
+	overflow-x: hidden;
 }
 
 .wrapper {
@@ -42,7 +44,6 @@ body {
 	font-weight: 400;
 	font-size: 15px;
 	color: $slate;
-	overflow-x: hidden;
 }
 
 h1, h2, h3 {
@@ -100,6 +101,8 @@ h1, h2, h3 {
 
 	&__inner {
 		padding: 45px 0px 35px;
+		overflow: hidden;
+		width: 1200px;
 	}
 
 	&__list {
