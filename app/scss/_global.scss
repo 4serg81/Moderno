@@ -9,8 +9,6 @@ html {
 html,
 body {
 	height: 100%;
-	position: relative;
-	overflow-x: hidden;
 }
 
 .wrapper {
@@ -44,6 +42,9 @@ body {
 	font-weight: 400;
 	font-size: 15px;
 	color: $slate;
+	position: relative;
+	overflow-x: hidden;
+	min-width: 320px;
 }
 
 h1, h2, h3 {
@@ -93,7 +94,7 @@ h1, h2, h3 {
 
 .products-item__rateyo {
 	display: inline-block;
-	margin-right: 12px;
+	margin-right: 8px;
 }
 
 .breadcrumbs {

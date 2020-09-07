@@ -2,6 +2,11 @@
 	background-color: #fff;
 }
 
+.header__top {
+	position: relative;
+	overflow-x: hidden;
+}
+
 .header__top-inner {
 	display: flex;
 	justify-content: space-between;

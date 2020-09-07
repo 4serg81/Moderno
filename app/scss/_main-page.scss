@@ -183,6 +183,7 @@
 		display: flex;
 		align-items: center;
 		max-width: 240px;
+		margin-right: 10px;
 		span {
 			@include medium;
 			font-size: 14px;
@@ -206,10 +207,22 @@
 			color: $dark;
 		}
 	}
-
-	.jq-ry-container {
-		padding: 0;
+	&:nth-child(1), &:nth-child(5) {
+		animation-delay: 0.2s;
 	}
+	&:nth-child(2), &:nth-child(6) {
+		animation-delay: 0.4s;
+	}
+	&:nth-child(3), &:nth-child(7) {
+		animation-delay: 0.6s;
+	}
+	&:nth-child(4), &:nth-child(8) {
+		animation-delay: 0.8s;
+	}
+}
+
+.jq-ry-container {
+	padding: 0;
 }
 
 .products__btns-bottom {
